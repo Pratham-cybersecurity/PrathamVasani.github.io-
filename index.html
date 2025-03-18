@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratham Vasani | Cybersecurity Professional</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="terminal">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="terminal-button"></span>
+                    <span class="terminal-button"></span>
+                    <span class="terminal-button"></span>
+                </div>
+                <div class="terminal-title">initializing_security_profile.sh</div>
+            </div>
+            <div class="terminal-content">
+                <div class="terminal-line">$ <span class="typing-text">Loading security profile...</span></div>
+                <div class="terminal-line">$ <span class="typing-text">Scanning for threats...</span></div>
+                <div class="terminal-line">$ <span class="typing-text">Initializing defensive protocols...</span></div>
+                <div class="terminal-line">$ <span class="typing-text">Establishing secure connection...</span></div>
+                <div class="terminal-line success">$ <span class="typing-text">Access granted. Welcome to Pratham's security domain.</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="network-bg">
+        <canvas id="network-canvas"></canvas>
+    </div>
+
+    <header>
+        <div class="logo">
+            <div class="logo-text">PV_<span class="blink">|</span></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="glitch" data-text="Pratham Vasani">Pratham Vasani</h1>
+                        <div class="typewriter">
+                            <span id="typewriter-text"></span><span class="cursor">|</span>
+                        </div>
+                        <p class="hero-description">Defending digital frontiers with expertise in threat detection, incident response, and penetration testing.</p>
+                        <div class="cta-buttons">
+                            <a href="#contact" class="btn primary-btn">Contact Me</a>
+                            <a href="#experience" class="btn secondary-btn">View Experience</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="security-dashboard">
+                            <div class="dashboard-header">
+                                <span>Security Operations Center</span>
+                                <div class="status-indicator active">LIVE</div>
+                            </div>
+                            <div class="dashboard-content">
+                                <div class="metric-card">
+                                    <div class="metric-title">Threats Detected</div>
+                                    <div class="metric-value" id="threats-counter">0</div>
+                                    <div class="metric-chart"></div>
+                                </div>
+                                <div class="metric-card">
+                                    <div class="metric-title">System Status</div>
+                                    <div class="metric-value">SECURE</div>
+                                    <div class="system-status-indicator"></div>
+                                </div>
+                                <div class="log-panel">
+                                    <div class="log-header">Security Logs</div>
+                                    <div class="log-content" id="security-logs">
+                                        <!-- Logs will be dynamically added here -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">About <span class="highlight">Me</span></h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="terminal-window">
+                            <div class="terminal-header">
+                                <div class="terminal-buttons">
+                                    <span class="terminal-button"></span>
+                                    <span class="terminal-button"></span>
+                                    <span class="terminal-button"></span>
+                                </div>
+                                <div class="terminal-title">profile.sh</div>
+                            </div>
+                            <div class="terminal-content">
+                                <div class="terminal-line">$ <span class="command">whoami</span></div>
+                                <div class="terminal-line output">Cybersecurity professional specializing in SOC operations, threat analysis, and penetration testing.</div>
+                                <div class="terminal-line">$ <span class="command">cat mission.txt</span></div>
+                                <div class="terminal-line output">Dedicated to protecting digital assets and infrastructure through proactive security measures and rapid incident response.</div>
+                                <div class="terminal-line">$ <span class="command">ls -la skills/</span></div>
+                                <div class="terminal-line output">Threat hunting, vulnerability management, penetration testing, and SIEM operations.</div>
+                                <div class="terminal-line">$ <span class="command">echo $CURRENT_FOCUS</span></div>
+                                <div class="terminal-line output">Currently focused on advanced threat detection and SOC analysis at Syracuse University.</div>
+                                <div class="terminal-line">$ <span class="command">_</span><span class="blink">|</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fas fa-shield-alt"></i></div>
+                            <div class="stat-number" id="counter-alerts">50+</div>
+                            <div class="stat-title">Security Alerts Monitored Daily</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fas fa-bug"></i></div>
+                            <div class="stat-number" id="counter-vulnerabilities">20+</div>
+                            <div class="stat-title">Security Flaws Identified</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fas fa-lock"></i></div>
+                            <div class="stat-number" id="counter-breaches">30%</div>
+                            <div class="stat-title">Web Breach Reduction</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fas fa-user-shield"></i></div>
+                            <div class="stat-number" id="counter-training">75+</div>
+                            <div class="stat-title">Users Trained</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <h2 class="section-title">Work <span class="highlight">Experience</span></h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Oct 2024 - Present</div>
+                        <div class="timeline-content">
+                            <h3>SOC Analyst</h3>
+                            <h4>Syracuse University | Syracuse, New York</h4>
+                            <ul class="experience-list">
+                                <li>Monitoring and responding to 50+ security alerts daily, performing phishing analysis and user account monitoring to detect and mitigate compromised accounts using Microsoft Defender.</li>
+                                <li>Investigating Incidents flagged by Reflex SOAR as part of incident response and monitoring, and conducting forensic investigations in Elastic SIEM.</li>
+                                <li>Tracking Activities for potential DMCA (Digital Millennium Copyright Act) violations and implementing measures to detect and quarantine users in accordance with university copyright infringement policies.</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Microsoft Defender</span>
+                                <span class="tech-tag">Reflex SOAR</span>
+                                <span class="tech-tag">Elastic SIEM</span>
+                                <span class="tech-tag">Incident Response</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Sep 2023 - Aug 2024</div>
+                        <div class="timeline-content">
+                            <h3>Cyber Security Research Engineer</h3>
+                            <h4>RAPIFUZZ | Mumbai, Maharashtra</h4>
+                            <ul class="experience-list">
+                                <li>Built CTF and CVE labs using Docker and Kali Linux, which facilitated hands-on training for 75+ users.</li>
+                                <li>Carried out Penetration Testing using tools like Burp Suite, John the Ripper and Metasploit, reducing web breaches by 30%.</li>
+                                <li>Identified 20+ security flaws using Nessus scans and created easy-to-understand reports to help stakeholders recognize risks, strengthening the organization's defences against cyberattacks.</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">Kali Linux</span>
+                                <span class="tech-tag">Burp Suite</span>
+                                <span class="tech-tag">Metasploit</span>
+                                <span class="tech-tag">Nessus</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Jun 2023 - Aug 2023</div>
+                        <div class="timeline-content">
+                            <h3>Cyber Security Analyst Intern</h3>
+                            <h4>RAPIFUZZ | Mumbai, Maharashtra</h4>
+                            <ul class="experience-list">
+                                <li>Designed 20+ realistic cyber-attack scenarios in a cyber range environment, where participants assumed various security roles and made critical decisions to respond to various cybersecurity incidents.</li>
+                                <li>Developed presentations on malware analysis, including Trojans, botnets, and mitigation strategies, to enhance security awareness.</li>
+                                <li>Ran 10+ email phishing campaigns monthly to provide cybersecurity awareness among the company.</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Cyber Range</span>
+                                <span class="tech-tag">Malware Analysis</span>
+                                <span class="tech-tag">Phishing Campaigns</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="education-section">
+            <div class="container">
+                <h2 class="section-title">Education & <span class="highlight">Certifications</span></h2>
+                <div class="education-container">
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-content">
+                            <h3>M.S. Information Systems, Information Security</h3>
+                            <h4>Syracuse University | Syracuse, New York</h4>
+                            <p class="education-date">August 2024 - May 2026</p>
+                            <p class="education-description">Relevant Coursework: Information Technology Management, Introduction to Information Security, Enterprise Risk Management.</p>
+                        </div>
+                    </div>
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-content">
+                            <h3>B.S. Information Technology</h3>
+                            <h4>University of Mumbai | Mumbai, Maharashtra</h4>
+                            <p class="education-date">August 2020 - May 2023</p>
+                            <p class="education-description">Relevant Coursework: Enterprise Networking, Internet of Things, Computer Networks, Software Engineering, Security in Computing, Artificial Intelligence.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="certifications-container">
+                    <h3 class="subsection-title">Professional Certifications</h3>
+                    <div class="cert-grid">
+                        <div class="cert-card">
+                            <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                            <h4>CEH</h4>
+                            <p>Certified Ethical Hacker</p>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                            <h4>CPTE</h4>
+                            <p>Certified Penetration Tester Expert</p>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                            <h4>BTF</h4>
+                            <p>Blue Team Fundamentals</p>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                            <h4>C3SA</h4>
+                            <p>Certified Cybersecurity Analyst</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2 class="section-title">Technical <span class="highlight">Skills</span></h2>
+                <div class="skills-container">
+                    <div class="skills-category">
+                        <h3 class="category-title">Programming Technologies</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-python"></i></div>
+                                <h4>Python</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+                                <h4>Bash Scripting</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                                <h4>R</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-category">
+                        <h3 class="category-title">Cybersecurity Tools</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-bug"></i></div>
+                                <h4>BurpSuite</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-search"></i></div>
+                                <h4>Nessus</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+                                <h4>Wireshark</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
+                                <h4>Kali Linux</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 92%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-shield-alt"></i></div>
+                                <h4>Nikto</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-map-marked-alt"></i></div>
+                                <h4>Nmap</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-sync-alt"></i></div>
+                                <h4>Reflex</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                                <h4>Elastic SIEM</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-spider"></i></div>
+                                <h4>ZAP</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 82%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-category">
+                        <h3 class="category-title">Cybersecurity Skills</h3>
+                        <div class="skills-cloud">
+                            <span class="skill-tag">Threat Analysis/Hunting</span>
+                            <span class="skill-tag">Vulnerability Management</span>
+                            <span class="skill-tag">Intrusion Prevention/Detection</span>
+                            <span class="skill-tag">Microsoft Azure</span>
+                            <span class="skill-tag">OSINT</span>
+                            <span class="skill-tag">Network Security</span>
+                            <span class="skill-tag">Threat Intelligence</span>
+                            <span class="skill-tag">Risk Assessment</span>
+                            <span class="skill-tag">Threat Modelling</span>
+                            <span class="skill-tag">Penetration Testing</span>
+                            <span class="skill-tag">Active Directory</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-category">
+                        <h3 class="category-title">Frameworks</h3>
+                        <div class="skills-cloud">
+                            <span class="skill-tag">NIST</span>
+                            <span class="skill-tag">MITRE ATT&CK</span>
+                            <span class="skill-tag">OWASP Top 10</span>
+                            <span class="skill-tag">Metasploit</span>
+                            <span class="skill-tag">OSI Model</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Malware Analysis</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-description">Comprehensive malware analysis project involving isolated virtual environments and advanced analysis techniques.</p>
+                            <ul class="project-details">
+                                <li>Set up an isolated virtual lab to safely analyze malware samples from VirusShare and MalwareBazaar.</li>
+                                <li>Implemented Any.Run to analyze and reverse-engineer malware, documenting its behavior in real-time environments.</li>
+                                <li>Performed both static and dynamic analysis using tools like Process Explorer, Ghidra and PEiD to examine process execution, network activity, and system modifications.</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span class="tech-tag">Any.Run</span>
+                                <span class="tech-tag">Process Explorer</span>
+                                <span class="tech-tag">Ghidra</span>
+                                <span class="tech-tag">PEiD</span>
+                                <span class="tech-tag">Virtual Lab</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Active Directory Exploitation</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-description">Comprehensive project demonstrating various Active Directory attack vectors and exploitation techniques.</p>
+                            <ul class="project-details">
+                                <li>Executed LLMNR poisoning and SMB relay attacks to capture NTLMv2 hashes, enabling unauthorized access on the target system.</li>
+                                <li>Conducted Kerberoasting to extract and crack service account credentials via weak Kerberos ticket encryption.</li>
+                                <li>Exploited misconfigurations in AD to escalate privileges, enabling domain controller compromise.</li>
+                                <li>Configured tools like Responder, Mimikatz and Impacket for attacks and exploitation.</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span class="tech-tag">LLMNR Poisoning</span>
+                                <span class="tech-tag">Kerberoasting</span>
+                                <span class="tech-tag">Responder</span>
+                                <span class="tech-tag">Mimikatz</span>
+                                <span class="tech-tag">Impacket</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="achievements-section">
+            <div class="container">
+                <h2 class="section-title">Notable <span class="highlight">Achievements</span></h2>
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h3>CNY Hackathon 2024 – Winner</h3>
+                            <h4>Utica, New York | November 2024</h4>
+                            <p>Secured 1st place in the CNY Hackathon by defending web servers against red team attacks and solving CTF challenges.</p>
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h3>Northeast Regional NCAE CyberGames</h3>
+                            <h4>Syracuse University Team | February 2025</h4>
+                            <p>Competed against teams from other universities and secured 2nd place showcasing strong teamwork and Cybersecurity skills.</p>
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-flag"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h3>Meta CTF</h3>
+                            <h4>Syracuse, New York | December 2024</h4>
+                            <p>Solved security challenges in web app security, cryptography, reverse engineering, and binary exploitation during the Meta Capture The Flag competition.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Contact <span class="highlight">Me</span></h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="terminal-window">
+                            <div class="terminal-header">
+                                <div class="terminal-buttons">
+                                    <span class="terminal-button"></span>
+                                    <span class="terminal-button"></span>
+                                    <span class="terminal-button"></span>
+                                </div>
+                                <div class="terminal-title">contact.sh</div>
+                            </div>
+                            <div class="terminal-content">
+                                <div class="terminal-line">$ <span class="command">cat contact_info.txt</span></div>
+                                <div class="terminal-line output">
+                                    <div class="contact-item">
+                                        <i class="fas fa-envelope"></i> pvasani@syr.edu
+                                    </div>
+                                    <div class="contact-item">
+                                        <i class="fas fa-phone"></i> +1 (315) 760-7331
+                                    </div>
+                                    <div class="contact-item">
+                                        <i class="fab fa-linkedin"></i> linkedin.com/in/prathamvasani/
+                                    </div>
+                                </div>
+                                <div class="terminal-line">$ <span class="command">echo "Let's connect and discuss cybersecurity opportunities!"</span></div>
+                                <div class="terminal-line output">Let's connect and discuss cybersecurity opportunities!</div>
+                                <div class="terminal-line">$ <span class="command">_</span><span class="blink">|</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn primary-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-text">PV_<span class="blink">|</span></div>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/prathamvasani/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:pvasani@syr.edu" class="social-link"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+13157607331" class="social-link"><i class="fas fa-phone"></i></a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Pratham Vasani. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

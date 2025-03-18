@@ -1,0 +1,70 @@
+Pratham Vasani
+pvasani@syr.edu • +1 (315) 760-7331 • https://www.linkedin.com/in/prathamvasani/
+WORK EXPERIENCE
+SOC Analyst | Syracuse University | Syracuse, New York
+October 2024 - Present
+• Monitoring and responding to 50+ security alerts daily, performing phishing analysis and user account monitoring to detect and
+mitigate compromised accounts using Microsoft Defender.
+• Investigating Incidents flagged by Reflex SOAR as part of incident response and monitoring, and conducting forensic investigations
+in Elastic SIEM.
+• Tracking Activities for potential DMCA (Digital Millennium Copyright Act) violations and implementing measures to detect and
+quarantine users in accordance with university copyright infringement policies.
+Cyber Security Research Engineer | RAPIFUZZ | Mumbai, Maharashtra
+September 2023 - August 2024
+• Built CTF and CVE labs using Docker and Kali Linux, which facilitated hands-on training for 75+ users.
+• Carried out Penetration Testing using tools like Burp Suite, John the Ripper and Metasploit, reducing web breaches by 30%.
+• Identified 20+ security flaws using Nessus scans and created easy-to-understand reports to help stakeholders recognize risks,
+strengthening the organization’s defences against cyberattacks.
+Cyber Security Analyst Intern | RAPIFUZZ | Mumbai, Maharashtra
+June 2023 - August 2023
+• Designed 20+ realistic cyber-attack scenarios in a cyber range environment, where participants assumed various security roles and
+made critical decisions to respond to various cybersecurity incidents.
+• Developed presentations on malware analysis, including Trojans, botnets, and mitigation strategies, to enhance security awareness.
+• Ran 10+ email phishing campaigns monthly to provide cybersecurity awareness among the company.
+
+EDUCATION
+Syracuse University | M.S. Information Systems, Information Security | Syracuse, New York
+August 2024 - May 2026
+Relevant Coursework: Information Technology Management, Introduction to Information Security, Enterprise Risk Management.
+University of Mumbai | B.S. Information Technology | Mumbai, Maharashtra
+August 2020 - May 2023
+Relevant Coursework: Enterprise Networking, Internet of Things, Computer Networks, Software Engineering, Security in Computing,
+Artificial Intelligence.
+
+SKILLS / CERTIFICATIONS
+Certifications: Certified Ethical Hacker (CEH), Certified Penetration Tester Expert (CPTE), Blue Team Fundamentals (BTF), Certified
+Cybersecurity Analyst (C3SA).
+Programming Technologies: Python, Bash Scripting, R.
+Cyber Security Tools: BurpSuite, Nesus, Wireshark, KaliLinux, Nikto, Nmap, Reflex, Elastic SIEM, ZAP.
+Skills: Threat Analysis/Hunting, Vulnerability Management, Intrusion Prevention/Detection systems, Microsoft Azure, OSINT,
+Network Security, Threat Intelligence, Risk Assessment, Threat Modelling, Penetration Testing, Active Directory.
+Frameworks: NIST, MITRE ATT&CK, OWASP Top 10, Metasploit, OSI Model.
+
+PROJECTS
+Malware Analysis
+Set up an isolated virtual lab to safely analyze malware samples from VirusShare and MalwareBazaar.
+Implemented Any.Run to analyze and reverse-engineer malware, documenting its behavior in real-time environments.
+Performed both static and dynamic analysis using tools like Process Explorer, Ghidra and PEiD to examine process execution,
+network activity, and system modifications.
+Active Directory Exploitation
+• Executed LLMNR poisoning and SMB relay attacks to capture NTLMv2 hashes, enabling unauthorized access on the target system.
+• Conducted Kerberoasting to extract and crack service account credentials via weak Kerberos ticket encryption.
+• Exploited misconfigurations in AD to escalate privileges, enabling domain controller compromise.
+• Configured tools like Responder, Mimikatz and Impacket for attacks and exploitation.
+•
+•
+•
+
+ACHIEVEMENTS
+CNY Hackathon 2024 – Winner | Utica, New York
+November 2024
+• Secured 1st place in the CNY Hackathon by defending web servers against red team attacks and solving CTF challenges.
+Northeast Regional NCAE CyberGames | Syracuse University Team
+February 2025
+• Competed against teams from other universities and secured 2nd place showcasing strong teamwork and Cybersecurity skills.
+Meta CTF | Syracuse, New York
+December 2024
+• Solved security challenges in web app security, cryptography, reverse engineering, and binary exploitation during the Meta Capture
+The Flag competition.
+
+
