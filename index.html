@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pratham Vasani | Cybersecurity Professional</title>
+    <!-- Practicing what I preach: hardened Content-Security-Policy scoped to the exact origins this site uses -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data:; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com data:; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; script-src 'self'; connect-src 'self' https://formsubmit.co; form-action 'self' https://formsubmit.co">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="theme-color" content="#0a0e17">
+    <title>Pratham Vasani | Security Analyst — SOC &amp; Offensive Security</title>
+    <meta name="description" content="Pratham Vasani — Security Analyst specializing in SOC operations, incident response, and offensive security. CARTP, CEH, CRTA, eJPT certified.">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -42,7 +47,7 @@
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#skills" class="nav-link">Skills &amp; Certifications</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#achievements" class="nav-link">Achievements</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -59,13 +64,15 @@
                 <div class="hero-content">
                     <div class="hero-text">
                         <h1 class="glitch" data-text="Pratham Vasani">Pratham Vasani</h1>
+                        <p class="hero-role">Security Analyst · SOC &amp; Offensive Security</p>
+                        <p class="hero-location"><i class="fas fa-location-dot" aria-hidden="true"></i> United States</p>
                         <div class="typewriter">
                             <span id="typewriter-text"></span><span class="cursor">|</span>
                         </div>
                         <p class="hero-description">Defending digital frontiers with expertise in threat detection, incident response, and penetration testing.</p>
                         <div class="cta-buttons">
-                            <a href="#contact" class="btn primary-btn">Contact Me</a>
-                            <a href="#experience" class="btn secondary-btn">View Experience</a>
+                            <a href="#contact" class="btn primary-btn"><i class="fas fa-envelope" aria-hidden="true"></i> Contact Me</a>
+                            <a href="https://www.linkedin.com/in/prathamvasani/" class="btn secondary-btn" target="_blank" rel="noopener"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
                         </div>
                     </div>
                     <div class="hero-image">
@@ -98,6 +105,22 @@
             </div>
         </section>
 
+        <section id="certifications" class="cert-strip-section" aria-label="Certifications overview">
+            <div class="container">
+                <h2 class="strip-title">Certifi<span class="highlight">cations</span></h2>
+                <ul class="cert-strip">
+                    <li class="cert-pill"><span class="cert-abbr">CARTP</span><span class="cert-name">Certified Azure Red Team Professional</span></li>
+                    <li class="cert-pill"><span class="cert-abbr">CEH</span><span class="cert-name">Certified Ethical Hacker</span></li>
+                    <li class="cert-pill"><span class="cert-abbr">CRTA</span><span class="cert-name">Certified Red Team Analyst</span></li>
+                    <li class="cert-pill"><span class="cert-abbr">eJPT</span><span class="cert-name">eLearnSecurity Junior Penetration Tester</span></li>
+                    <li class="cert-pill"><span class="cert-abbr">CPTE</span><span class="cert-name">Certified Penetration Tester Expert</span></li>
+                    <li class="cert-pill"><span class="cert-abbr">C3SA</span><span class="cert-name">Certified Cyber Security Analyst</span></li>
+                    <li class="cert-pill"><span class="cert-abbr">BTF</span><span class="cert-name">Blue Team Fundamentals</span></li>
+                    <li class="cert-pill"><span class="cert-abbr">ISO 27001</span><span class="cert-name">Lead Auditor</span></li>
+                </ul>
+            </div>
+        </section>
+
         <section id="about" class="about-section">
             <div class="container">
                 <h2 class="section-title">About <span class="highlight">Me</span></h2>
@@ -110,18 +133,18 @@
                                     <span class="terminal-button"></span>
                                     <span class="terminal-button"></span>
                                 </div>
-                                <div class="terminal-title">profile.sh</div>
+                                <div class="terminal-title">profile.sh <span class="terminal-live-badge">● live</span></div>
                             </div>
                             <div class="terminal-content">
-                                <div class="terminal-line">$ <span class="command">whoami</span></div>
-                                <div class="terminal-line output">Cybersecurity professional specializing in SOC operations, threat analysis, and penetration testing.</div>
-                                <div class="terminal-line">$ <span class="command">cat mission.txt</span></div>
-                                <div class="terminal-line output">Dedicated to protecting digital assets and infrastructure through proactive security measures and rapid incident response.</div>
-                                <div class="terminal-line">$ <span class="command">ls -la skills/</span></div>
-                                <div class="terminal-line output">Threat hunting, vulnerability management, penetration testing, and SIEM operations.</div>
-                                <div class="terminal-line">$ <span class="command">echo $CURRENT_FOCUS</span></div>
-                                <div class="terminal-line output">Currently focused on advanced threat detection and SOC analysis at Syracuse University.</div>
-                                <div class="terminal-line">$ <span class="command">_</span><span class="blink">|</span></div>
+                                <div class="terminal-line">$ <span class="command">cat about_me.txt</span></div>
+                                <div class="terminal-line output bio-paragraph">I'm Pratham, and I blame Mr. Robot for all of this. Watching Elliot see systems the way most people never do flipped a switch in me: I wanted to understand how things really work underneath, and how they break. Years later that curiosity is my career. I recently earned my Master's in Information Systems from Syracuse University, though most of my real learning happens at 2am on TryHackMe (top 7% worldwide) or in the middle of a competition. My team won the CNY Hackathon in 2024, and I led Syracuse's team to a 2nd place finish at the Northeast Regional NCAE CyberGames.</div>
+                                <div class="terminal-line output bio-paragraph">What I love most is thinking like an attacker and a defender at the same time. I've worked across penetration testing, SOC operations, threat hunting, and red team engagements, and right now I'm fascinated by where AI and security collide, from breaking AI powered tools to understanding how attackers weaponize them.</div>
+                                <div class="terminal-line output bio-paragraph">When I'm not behind a keyboard, you'll usually find me at security conferences, swapping ideas, meeting people who are just as obsessed with this field, and keeping up with where it's all headed.</div>
+                                <div class="terminal-line output bio-paragraph">I believe every system tells a story. Some hide it, some reveal it. I want to find those stories and use them to build something stronger.</div>
+                                <div class="terminal-line output bio-paragraph">I'm open to full time roles, and I'll never say no to a security project, a CTF, or a good conversation at a conference. Let's connect.</div>
+                                <div class="terminal-line terminal-hint">// this shell is live — try <span class="command">help</span>, <span class="command">hack</span>, or <span class="command">security</span></div>
+                                <div id="terminal-output" aria-live="polite"></div>
+                                <div class="terminal-line terminal-input-line"><span class="terminal-prompt">$</span> <input id="terminal-input" class="terminal-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="try: help · hack · security" aria-label="Interactive terminal. Type help and press Enter."></div>
                             </div>
                         </div>
                     </div>
@@ -157,58 +180,68 @@
                 <div class="timeline">
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
-                        <div class="timeline-date">Oct 2024 - Present</div>
+                        <div class="timeline-date">May 2025 – April 2026</div>
                         <div class="timeline-content">
-                            <h3>SOC Analyst</h3>
-                            <h4>Syracuse University | Syracuse, New York</h4>
+                            <h3>Cyber Security Intern</h3>
+                            <h4>Langan Engineering and Environmental Services | Parsippany, NJ</h4>
                             <ul class="experience-list">
-                                <li>Monitoring and responding to 50+ security alerts daily, performing phishing analysis and user account monitoring to detect and mitigate compromised accounts using Microsoft Defender.</li>
-                                <li>Investigating Incidents flagged by Reflex SOAR as part of incident response and monitoring, and conducting forensic investigations in Elastic SIEM.</li>
-                                <li>Tracking Activities for potential DMCA (Digital Millennium Copyright Act) violations and implementing measures to detect and quarantine users in accordance with university copyright infringement policies.</li>
+                                <li>Work across offensive and defensive security functions, including security assessments, threat investigation, and vulnerability management.</li>
+                                <li>Investigate external threats targeting the organization and coordinate takedown and remediation efforts.</li>
+                                <li>Assess security posture across cloud and enterprise environments and deliver remediation guidance to stakeholders.</li>
                             </ul>
                             <div class="tech-tags">
-                                <span class="tech-tag">Microsoft Defender</span>
-                                <span class="tech-tag">Reflex SOAR</span>
-                                <span class="tech-tag">Elastic SIEM</span>
+                                <span class="tech-tag">Threat Detection</span>
+                                <span class="tech-tag">Incident Response</span>
+                                <span class="tech-tag">Cloud Security</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">October 2024 – May 2025</div>
+                        <div class="timeline-content">
+                            <h3>SOC Analyst</h3>
+                            <h4>Syracuse University | Syracuse, NY</h4>
+                            <ul class="experience-list">
+                                <li>Monitor, triage, and investigate security alerts across university endpoints and accounts.</li>
+                                <li>Support incident response through log analysis, threat detection, and root cause investigation.</li>
+                                <li>Build internal tooling and detection improvements to streamline SOC workflows.</li>
+                            </ul>
+                            <div class="tech-tags">
+                                <span class="tech-tag">SIEM/SOAR</span>
+                                <span class="tech-tag">EDR</span>
+                                <span class="tech-tag">Threat Detection</span>
                                 <span class="tech-tag">Incident Response</span>
                             </div>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
-                        <div class="timeline-date">Sep 2023 - Aug 2024</div>
+                        <div class="timeline-date">September 2023 – August 2024</div>
                         <div class="timeline-content">
                             <h3>Cyber Security Research Engineer</h3>
-                            <h4>RAPIFUZZ | Mumbai, Maharashtra</h4>
+                            <h4>RAPIFUZZ | Mumbai, India</h4>
                             <ul class="experience-list">
-                                <li>Built CTF and CVE labs using Docker and Kali Linux, which facilitated hands-on training for 75+ users.</li>
-                                <li>Carried out Penetration Testing using tools like Burp Suite, John the Ripper and Metasploit, reducing web breaches by 30%.</li>
-                                <li>Identified 20+ security flaws using Nessus scans and created easy-to-understand reports to help stakeholders recognize risks, strengthening the organization's defences against cyberattacks.</li>
+                                <li>Researched emerging attack techniques and adversary tradecraft in lab environments.</li>
+                                <li>Conducted vulnerability assessments and produced remediation guidance for stakeholders.</li>
                             </ul>
                             <div class="tech-tags">
-                                <span class="tech-tag">Docker</span>
-                                <span class="tech-tag">Kali Linux</span>
-                                <span class="tech-tag">Burp Suite</span>
-                                <span class="tech-tag">Metasploit</span>
-                                <span class="tech-tag">Nessus</span>
+                                <span class="tech-tag">Threat Detection</span>
+                                <span class="tech-tag">Incident Response</span>
                             </div>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
-                        <div class="timeline-date">Jun 2023 - Aug 2023</div>
+                        <div class="timeline-date">June 2023 – August 2023</div>
                         <div class="timeline-content">
                             <h3>Cyber Security Analyst Intern</h3>
-                            <h4>RAPIFUZZ | Mumbai, Maharashtra</h4>
+                            <h4>RAPIFUZZ | Mumbai, India</h4>
                             <ul class="experience-list">
-                                <li>Designed 20+ realistic cyber-attack scenarios in a cyber range environment, where participants assumed various security roles and made critical decisions to respond to various cybersecurity incidents.</li>
-                                <li>Developed presentations on malware analysis, including Trojans, botnets, and mitigation strategies, to enhance security awareness.</li>
-                                <li>Ran 10+ email phishing campaigns monthly to provide cybersecurity awareness among the company.</li>
+                                <li>Designed hands-on security training scenarios and awareness programs to strengthen organizational defenses.</li>
                             </ul>
                             <div class="tech-tags">
-                                <span class="tech-tag">Cyber Range</span>
-                                <span class="tech-tag">Malware Analysis</span>
-                                <span class="tech-tag">Phishing Campaigns</span>
+                                <span class="tech-tag">Threat Detection</span>
                             </div>
                         </div>
                     </div>
@@ -249,8 +282,23 @@
                     <div class="cert-grid">
                         <div class="cert-card">
                             <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                            <h4>CARTP</h4>
+                            <p>Certified Azure Red Team Professional</p>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-icon"><i class="fas fa-certificate"></i></div>
                             <h4>CEH</h4>
                             <p>Certified Ethical Hacker</p>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                            <h4>CRTA</h4>
+                            <p>Certified Red Team Analyst</p>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                            <h4>eJPT</h4>
+                            <p>eLearnSecurity Junior Penetration Tester</p>
                         </div>
                         <div class="cert-card">
                             <div class="cert-icon"><i class="fas fa-certificate"></i></div>
@@ -259,13 +307,18 @@
                         </div>
                         <div class="cert-card">
                             <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                            <h4>C3SA</h4>
+                            <p>Certified Cyber Security Analyst</p>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-icon"><i class="fas fa-certificate"></i></div>
                             <h4>BTF</h4>
                             <p>Blue Team Fundamentals</p>
                         </div>
                         <div class="cert-card">
                             <div class="cert-icon"><i class="fas fa-certificate"></i></div>
-                            <h4>C3SA</h4>
-                            <p>Certified Cybersecurity Analyst</p>
+                            <h4>ISO 27001</h4>
+                            <p>Lead Auditor</p>
                         </div>
                     </div>
                 </div>
@@ -274,129 +327,80 @@
 
         <section id="skills" class="skills-section">
             <div class="container">
-                <h2 class="section-title">Technical <span class="highlight">Skills</span></h2>
-                <div class="skills-container">
-                    <div class="skills-category">
-                        <h3 class="category-title">Programming Technologies</h3>
-                        <div class="skills-grid">
-                            <div class="skill-item">
-                                <div class="skill-icon"><i class="fab fa-python"></i></div>
-                                <h4>Python</h4>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 90%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-icon"><i class="fas fa-terminal"></i></div>
-                                <h4>Bash Scripting</h4>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 85%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
-                                <h4>R</h4>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 75%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="skills-category">
-                        <h3 class="category-title">Cybersecurity Tools</h3>
-                        <div class="skills-grid">
-                            <div class="skill-item">
-                                <div class="skill-icon"><i class="fas fa-bug"></i></div>
-                                <h4>BurpSuite</h4>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 95%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-icon"><i class="fas fa-search"></i></div>
-                                <h4>Nessus</h4>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 90%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
-                                <h4>Wireshark</h4>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 85%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
-                                <h4>Kali Linux</h4>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 92%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-icon"><i class="fas fa-shield-alt"></i></div>
-                                <h4>Nikto</h4>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 80%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-icon"><i class="fas fa-map-marked-alt"></i></div>
-                                <h4>Nmap</h4>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 88%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-icon"><i class="fas fa-sync-alt"></i></div>
-                                <h4>Reflex</h4>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 85%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-icon"><i class="fas fa-database"></i></div>
-                                <h4>Elastic SIEM</h4>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 90%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-icon"><i class="fas fa-spider"></i></div>
-                                <h4>ZAP</h4>
-                                <div class="skill-bar">
-                                    <div class="skill-level" style="width: 82%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="skills-category">
-                        <h3 class="category-title">Cybersecurity Skills</h3>
+                <h2 class="section-title">Skills &amp; <span class="highlight">Arsenal</span></h2>
+                <div class="skills-filter" role="tablist" aria-label="Filter skills by category">
+                    <button class="filter-tab active" role="tab" aria-selected="true" data-filter="all">All</button>
+                    <button class="filter-tab" role="tab" aria-selected="false" data-filter="core">Core Skills</button>
+                    <button class="filter-tab" role="tab" aria-selected="false" data-filter="tools">Tools</button>
+                    <button class="filter-tab" role="tab" aria-selected="false" data-filter="frameworks">Frameworks &amp; Compliance</button>
+                    <button class="filter-tab" role="tab" aria-selected="false" data-filter="programming">Programming</button>
+                </div>
+                <div class="skills-container arsenal">
+                    <div class="skills-category arsenal-group" data-category="core">
+                        <h3 class="category-title">Core Skills</h3>
                         <div class="skills-cloud">
-                            <span class="skill-tag">Threat Analysis/Hunting</span>
-                            <span class="skill-tag">Vulnerability Management</span>
-                            <span class="skill-tag">Intrusion Prevention/Detection</span>
-                            <span class="skill-tag">Microsoft Azure</span>
-                            <span class="skill-tag">OSINT</span>
-                            <span class="skill-tag">Network Security</span>
-                            <span class="skill-tag">Threat Intelligence</span>
-                            <span class="skill-tag">Risk Assessment</span>
-                            <span class="skill-tag">Threat Modelling</span>
+                            <span class="skill-tag">Threat Hunting</span>
+                            <span class="skill-tag">Detection Engineering</span>
                             <span class="skill-tag">Penetration Testing</span>
+                            <span class="skill-tag">Vulnerability Research</span>
+                            <span class="skill-tag">Vulnerability Management</span>
+                            <span class="skill-tag">Threat Intelligence</span>
+                            <span class="skill-tag">Threat Modeling</span>
+                            <span class="skill-tag">Risk Assessment</span>
+                            <span class="skill-tag">Intrusion Detection/Prevention (IDS/IPS)</span>
+                            <span class="skill-tag">Network Security</span>
+                            <span class="skill-tag">Cloud Security (AWS &amp; Azure)</span>
+                            <span class="skill-tag">OSINT</span>
                             <span class="skill-tag">Active Directory</span>
+                            <span class="skill-tag">Data Loss Prevention</span>
+                            <span class="skill-tag">Security Automation</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Kubernetes</span>
                         </div>
                     </div>
-                    
-                    <div class="skills-category">
-                        <h3 class="category-title">Frameworks</h3>
+                    <div class="skills-category arsenal-group" data-category="tools">
+                        <h3 class="category-title">Tools</h3>
                         <div class="skills-cloud">
-                            <span class="skill-tag">NIST</span>
-                            <span class="skill-tag">MITRE ATT&CK</span>
-                            <span class="skill-tag">OWASP Top 10</span>
+                            <span class="skill-tag">Burp Suite</span>
                             <span class="skill-tag">Metasploit</span>
-                            <span class="skill-tag">OSI Model</span>
+                            <span class="skill-tag">Nessus</span>
+                            <span class="skill-tag">Wireshark</span>
+                            <span class="skill-tag">Kali Linux</span>
+                            <span class="skill-tag">Splunk</span>
+                            <span class="skill-tag">Elastic/Kibana</span>
+                            <span class="skill-tag">Snort</span>
+                            <span class="skill-tag">Suricata</span>
+                            <span class="skill-tag">Yara</span>
+                            <span class="skill-tag">Rapid7</span>
+                            <span class="skill-tag">Microsoft Defender</span>
+                            <span class="skill-tag">Microsoft Azure</span>
+                            <span class="skill-tag">Mimikatz</span>
+                            <span class="skill-tag">Impacket</span>
+                            <span class="skill-tag">Responder</span>
+                        </div>
+                    </div>
+                    <div class="skills-category arsenal-group" data-category="frameworks">
+                        <h3 class="category-title">Frameworks &amp; Compliance</h3>
+                        <div class="skills-cloud">
+                            <span class="skill-tag">MITRE ATT&amp;CK</span>
+                            <span class="skill-tag">NIST CSF</span>
+                            <span class="skill-tag">OWASP Top 10</span>
+                            <span class="skill-tag">OWASP LLM Top 10</span>
+                            <span class="skill-tag">ISO 27001</span>
+                            <span class="skill-tag">SOC 2</span>
+                            <span class="skill-tag">CMMC 2.0</span>
+                            <span class="skill-tag">PCI-DSS</span>
+                            <span class="skill-tag">GDPR</span>
+                            <span class="skill-tag">HIPAA</span>
+                        </div>
+                    </div>
+                    <div class="skills-category arsenal-group" data-category="programming">
+                        <h3 class="category-title">Programming</h3>
+                        <div class="skills-cloud">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Bash</span>
+                            <span class="skill-tag">PowerShell</span>
+                            <span class="skill-tag">R</span>
                         </div>
                     </div>
                 </div>
@@ -407,6 +411,21 @@
             <div class="container">
                 <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
                 <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>AWS Security Event Processing &amp; Incident Response Automation</h3>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-description">Automated pipeline that ingests AWS security events, enriches and triages findings, and triggers incident response workflows — reducing manual investigation effort for common alert types.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">AWS</span>
+                                <span class="tech-tag">Lambda</span>
+                                <span class="tech-tag">GuardDuty</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Incident Response</span>
+                            </div>
+                        </div>
+                    </div>
                     <div class="project-card">
                         <div class="project-header">
                             <h3>Malware Analysis</h3>
@@ -432,7 +451,7 @@
                     </div>
                     <div class="project-card">
                         <div class="project-header">
-                            <h3>Active Directory Exploitation</h3>
+                            <h3>Active Directory Exploitation Lab</h3>
                             <div class="project-links">
                                 <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                             </div>
@@ -477,7 +496,7 @@
                             <i class="fas fa-medal"></i>
                         </div>
                         <div class="achievement-content">
-                            <h3>Northeast Regional NCAE CyberGames</h3>
+                            <h3>NCAE CyberGames 2025 — Northeast Regional, 2nd Place</h3>
                             <h4>Syracuse University Team | February 2025</h4>
                             <p>Competed against teams from other universities and secured 2nd place showcasing strong teamwork and Cybersecurity skills.</p>
                         </div>
@@ -513,9 +532,9 @@
                             <div class="terminal-content">
                                 <div class="terminal-line">$ <span class="command">cat contact_info.txt</span></div>
                                 <div class="terminal-line output">
-                                    <div class="contact-item">
-                                        <i class="fas fa-envelope"></i> pvasani@syr.edu
-                                    </div>
+                                    <button type="button" class="contact-item copy-email" data-copy="vasanipratham5@gmail.com" aria-label="Copy email address to clipboard">
+                                        <i class="fas fa-envelope" aria-hidden="true"></i> vasanipratham5@gmail.com <i class="fas fa-copy copy-hint" aria-hidden="true"></i>
+                                    </button>
                                     <div class="contact-item">
                                         <i class="fas fa-phone"></i> +1 (315) 760-7331
                                     </div>
@@ -530,14 +549,14 @@
                         </div>
                     </div>
                     <div class="contact-form">
-                        <form id="contactForm">
+                        <form id="contactForm" novalidate>
                             <div class="form-group">
                                 <label for="name">Name</label>
-                                <input type="text" id="name" name="name" required>
+                                <input type="text" id="name" name="name" autocomplete="name" required>
                             </div>
                             <div class="form-group">
                                 <label for="email">Email</label>
-                                <input type="email" id="email" name="email" required>
+                                <input type="email" id="email" name="email" autocomplete="email" required>
                             </div>
                             <div class="form-group">
                                 <label for="subject">Subject</label>
@@ -547,7 +566,12 @@
                                 <label for="message">Message</label>
                                 <textarea id="message" name="message" rows="5" required></textarea>
                             </div>
-                            <button type="submit" class="btn primary-btn">Send Message</button>
+                            <div class="form-group honeypot" aria-hidden="true">
+                                <label for="company">Company</label>
+                                <input type="text" id="company" name="company" tabindex="-1" autocomplete="off">
+                            </div>
+                            <button type="submit" class="btn primary-btn" id="submitBtn">Send Message</button>
+                            <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
                         </form>
                     </div>
                 </div>
@@ -563,11 +587,11 @@
                 </div>
                 <div class="footer-social">
                     <a href="https://www.linkedin.com/in/prathamvasani/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:pvasani@syr.edu" class="social-link"><i class="fas fa-envelope"></i></a>
+                    <a href="mailto:vasanipratham5@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
                     <a href="tel:+13157607331" class="social-link"><i class="fas fa-phone"></i></a>
                 </div>
                 <div class="footer-copyright">
-                    <p>&copy; 2025 Pratham Vasani. All rights reserved.</p>
+                    <p>&copy; 2026 Pratham Vasani. All rights reserved.</p>
                 </div>
             </div>
         </div>
